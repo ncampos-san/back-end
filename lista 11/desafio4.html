@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriVida | Calculadora de IMC</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(180deg, #e8f5e9 0%, #f1f8e9 100%);
+            color: #1b3a1b;
+            line-height: 1.5;
+        }
+        header {
+            background: #2e7d32;
+            color: #fff;
+            padding: 24px 16px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 42px;
+            line-height: 1;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            margin-top: 6px;
+        }
+        header p { opacity: 0.92; font-size: 0.95rem; }
+        main {
+            max-width: 720px;
+            margin: 28px auto;
+            padding: 0 16px 40px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 8px 24px rgba(46, 125, 50, 0.12);
+            margin-bottom: 20px;
+        }
+        .banner {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            background: #c8e6c9;
+        }
+        h2 { color: #2e7d32; margin-bottom: 10px; }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-top: 12px;
+            margin-bottom: 4px;
+        }
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #a5d6a7;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        button[type="submit"] {
+            margin-top: 18px;
+            width: 100%;
+            padding: 12px;
+            background: #2e7d32;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover { background: #1b5e20; }
+        .cta {
+            text-align: center;
+            background: #1b5e20;
+            color: #fff;
+            padding: 28px 16px;
+            border-radius: 16px;
+        }
+        .cta h3 { margin-bottom: 8px; }
+        .cta a {
+            display: inline-block;
+            margin-top: 14px;
+            background: #fff;
+            color: #1b5e20;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 10px 22px;
+            border-radius: 999px;
+        }
+        footer {
+            text-align: center;
+            padding: 16px;
+            font-size: 0.85rem;
+            color: #4a6b4a;
+        }
+    </style>
+</head>
+<body>
+    <body>
+    <header>
+        <div class="logo">🥗</div>
+        <h1>NutriVida</h1>
+        <p>Clínica de Nutrição — Dra. Marina Oliveira</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <img class="banner"
+                 src="alimentacao-saudavel-adolescencia-2048x1463.jpg"
+                 alt="Alimentação saudável">
+            <h2>Por que acompanhar o peso?</h2>
+            <p>
+                Manter o peso em equilíbrio ajuda a prevenir doenças, melhora a disposição
+                e favorece hábitos mais saudáveis. O IMC é um indicador simples, mas não
+                substitui a avaliação de um profissional. Use esta calculadora como um
+                primeiro passo para cuidar da sua saúde.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Calcule seu IMC</h2>
+            <form action="desafio4.php" method="POST">
+                <label for="nome">Nome da pessoa:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" name="peso" min="1" step="0.1" required>
+
+                <label for="altura">Altura (m):</label>
+                <input type="number" id="altura" name="altura" min="0.5" max="2.5" step="0.01" required>
+
+                <button type="submit">Calcular IMC</button>
+            </form>
+        </div>
+
+        <div class="cta">
+            <h3>Quer cuidar melhor da sua saúde?</h3>
+            <p>Agende uma consulta com nossa nutricionista!</p>
+            <a href="#">Agendar consulta</a>
+        </div>
+    </main>
+
+    <footer>NutriVida © 2026 — Cuidar de você é o nosso prato principal.</footer>
+</body>
+</html>

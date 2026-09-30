@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Abastecendo o carro</title>
+</head>
+<body>
+
+    <h1>Abastecendo o carro</h1>
+
+    <form action="desafio2.php" method="post">
+        <label>Tipo de combustível:</label>
+        <select name="combustivel">
+            <option value="gasolina">Gasolina</option>
+            <option value="etanol">Etanol</option>
+            <option value="diesel">Diesel</option>
+        </select>
+
+        <br><br>
+
+        <label>Quantidade de litros:</label>
+        <input type="number" name="litros" step="0.01" required>
+
+        <br><br>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+</body>
+</html>
