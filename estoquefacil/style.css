@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #10121a;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #39ff88;
+}
+
+.subtitulo, .rodape {
+    color: #aaa;
+}
+
+.formulario {
+    background: #1c202c;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input, select {
+    background: #10121a;
+    color: white;
+    border: 1px solid #444;
+}
+
+button {
+    margin-top: 20px;
+    background: #39ff88;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #20d96d;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+th, td {
+    padding: 10px 5px;
+    border-bottom: 1px solid #444;
+    text-align: left;
+}
+
+th {
+    color: #39ff88;
+}
+
+.botao {
+    display: block;
+    margin-top: 20px;
+    padding: 12px;
+    background: #39ff88;
+    color: #10121a;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.img-produto{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+}
